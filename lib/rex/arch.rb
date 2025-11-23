@@ -16,9 +16,20 @@ module Arch
   #
   # Architecture classes
   #
-  require 'rex/arch/x86'
+  require 'rex/arch/aarch64'
+  require 'rex/arch/amd64'
+  require 'rex/arch/arm'
+  require 'rex/arch/loongarch64'
+  require 'rex/arch/mips32'
+  require 'rex/arch/mips64'
+  require 'rex/arch/ppc32'
+  require 'rex/arch/ppc64'
+  require 'rex/arch/riscv32'
+  require 'rex/arch/riscv64'
   require 'rex/arch/sparc'
+  require 'rex/arch/x86'
   require 'rex/arch/zarch'
+
 
   #
   # Architecture constants

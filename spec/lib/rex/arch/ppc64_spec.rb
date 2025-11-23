@@ -2,19 +2,19 @@
 require 'spec_helper'
 require 'rex/arch'
 
-RSpec.describe Rex::Arch::ZArch do
+RSpec.describe Rex::Arch::PPC64 do
   describe ".reg_number" do
     subject { described_class.reg_number(register) }
 
     context "when valid argument" do
       context "in upcase" do
         let(:register) { "SP" }
-        it { is_expected.to eq(Rex::Arch::ZArch::SP) }
+        it { is_expected.to eq(Rex::Arch::PPC64::SP) }
       end
 
       context "in downcase" do
         let(:register) { "sp" }
-        it { is_expected.to eq(Rex::Arch::ZArch::SP) }
+        it { is_expected.to eq(Rex::Arch::PPC64::SP) }
       end
     end
 
